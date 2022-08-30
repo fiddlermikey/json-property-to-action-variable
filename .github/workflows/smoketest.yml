@@ -3,7 +3,7 @@ on: [workflow_dispatch, push]
 
 jobs:
   get-json-value:
-    uses: fiddlermikey/json-property-to-action-variable/action.yml@main
+    uses: .github/workflows/fiddlermikey/json-property-to-action-variable/action.yml@main
     with:
       json-ID: "name" # JSON property to lookup
       json-path: "integration-manifest.json" # JSON file to use
