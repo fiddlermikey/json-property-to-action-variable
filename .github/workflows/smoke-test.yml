@@ -3,7 +3,7 @@ on: [workflow_dispatch, push]
 
 jobs:
   get-json-value:
-    uses: fiddlermikey/json-property-to-action-variable/.github/workflows/action.yml@main
+    uses: fiddlermikey/json-property-to-action-variable/.github/workflows/action.yml@0.1.0
     with:
       json-ID: "name" # JSON property to lookup
       json-path: "manifest.json" # JSON file to use
