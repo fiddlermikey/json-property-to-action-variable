@@ -28,4 +28,5 @@ jobs:
         run: |
           $json = Get-Content ${{ inputs.json-path }} | ConvertFrom-Json
           echo "prop=$(echo $json.${{ inputs.json-ID }})" >> $GITHUB_ENV
+          echo "GITHUB_ENV prop value is ${{ env.prop }}"
 #          echo "::set-output name=prop::$(echo $json.${{ inputs.json-ID }})"
