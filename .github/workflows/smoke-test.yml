@@ -6,7 +6,7 @@ jobs:
     uses: fiddlermikey/json-property-to-action-variable/.github/workflows/action.yml@main
     with:
       json-ID: "name" # JSON property to lookup
-      json-path: "/integration-manifest.json" # JSON file to use
+      json-path: "../integration-manifest.json" # JSON file to use
   output-read-value:
     runs-on: ubuntu-latest
     needs: get-json-value
