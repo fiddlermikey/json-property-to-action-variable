@@ -27,6 +27,5 @@ jobs:
         shell: pwsh
         run: |
           $json = Get-Content ${{ inputs.json-path }} | ConvertFrom-Json
-          echo "prop=value" >> $GITHUB_OUTPUT
-#          echo "prop=$(echo $json.${{ inputs.json-ID }})" >> $GITHUB_ENV
-#          echo "::set-output name=prop::$(echo $json.${{ inputs.json-ID }})"
+          echo "prop=$(echo $json.${{ inputs.json-ID }})" >> $GITHUB_ENV
+          echo "::set-output name=prop::$(echo $json.${{ inputs.json-ID }})"
